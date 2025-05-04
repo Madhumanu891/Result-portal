@@ -1,0 +1,219 @@
+/* General Reset and Typography */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f7f9fc;
+  color: #333;
+}
+
+.app-container{
+  width: 100%;
+  height: 100vh;
+
+
+}
+
+.home{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.con{
+  width: 40%;
+}
+
+input, button, select {
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.radio{
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+   gap: 40px;
+   box-sizing: border-box;
+   padding-left: 20px;
+}
+.radio div{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: row;
+   gap: 5px;
+}
+.regradio{
+  width: 50%;
+  
+}
+
+/* Form Containers */
+.fcon {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.form {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+}
+
+/* Button Styling */
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Error Message */
+.err {
+  color: red;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+/* Nav Styling */
+nav {
+  background-color: #004085;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0.5rem;
+  font-weight: 500;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  max-width: 700px;
+  margin: 2rem auto;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #f1f1f1;
+}
+
+/* Image Styling */
+img {
+  max-width: 100px;
+  border-radius: 8px;
+}
+
+/* Home Page */
+.home {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Hall Ticket Card */
+
+.halcon{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container{
+  width: 30%;
+}
+.hcard {
+  margin: 2rem auto;
+  text-align: center;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  max-width: 300px;
+}
+
+.hcard img {
+  max-width: 100%;
+}
+
+.halradio{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 50px; 
+}
+
+.halradio div{
+  width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .form, table, .hcard {
+    width: 90%;
+    padding: 1rem;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+
+  nav a {
+    margin: 0.5rem 0;
+  }
+
+  input, button {
+    font-size: 0.95rem;
+  }
+}
+
+.login{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lgcontainer{
+  width: 30%;
+  padding-top: 50px;
+}
