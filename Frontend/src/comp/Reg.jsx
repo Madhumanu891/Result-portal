@@ -16,7 +16,7 @@ const Reg = () => {
     {
       fd.append(p,data[p])
     }
-    axios.post("http://localhost:5000/reg",fd).then((res)=>{
+    axios.post("https://result-portal-api.vercel.app/reg",fd).then((res)=>{
       if("msg" in res.data)
       {
 setMsg(res.data.msg)
