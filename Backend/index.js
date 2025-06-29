@@ -10,8 +10,8 @@ let app=express()
 app.use(express.json())
 app.use(bodyParser.urlencoded({"extended":true}))
 app.use(cors({
-          origin:["https://deploy.mern-1whp.vercel.app"],
-          methods:["POST","GET"],
+          origin:["https://result-portal-client.vercel.app"],
+          methods:["POST","GET","PUT","DELETE"],
           credential:true
         }
     
