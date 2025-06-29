@@ -9,7 +9,13 @@ mongoose.connect("mongodb://127.0.0.1:27017/s34resportal").then(()=>{
 let app=express()
 app.use(express.json())
 app.use(bodyParser.urlencoded({"extended":true}))
-app.use(cors())
+app.use(cors({
+          origin:["https://deploy.mern-1whp.vercel.app"],
+          methods:["POST","GET"],
+          credential:true
+        }
+    
+            ))
 app.use("/pic",express.static("./phots"))
 app.use("/",rt)
 app.listen(5000)
