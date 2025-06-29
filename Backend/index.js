@@ -17,5 +17,8 @@ app.use(cors({
     
             ))
 app.use("/pic",express.static("./phots"))
+app.get("/",(req,res)=>{
+    res.send("Hello")
+})
 app.use("/",rt)
 app.listen(5000)
