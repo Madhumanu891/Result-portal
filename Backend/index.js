@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({"extended":true}))
 app.use(cors({
           origin:["https://result-portal-client.vercel.app/"],
           methods:["POST","GET","PUT","DELETE"],
-          credential:true
+          credentials: true 
         }
     
             ))
