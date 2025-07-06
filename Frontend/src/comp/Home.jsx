@@ -7,7 +7,7 @@ const Home = () => {
         setHno(e.target.value)
     }
     let getres=()=>{
-        axios.get(`https://result-portal-api.vercel.app/res/${hno}`).then((res)=>{
+        axios.get(`https://result-portal-4nfo.onrender.com/res/${hno}`).then((res)=>{
             setData(res.data)
             setHno("")
         })
@@ -20,7 +20,7 @@ const Home = () => {
             <button onClick={getres}>GetResults</button>
           {data&&"_id" in data&&  <table>
                 <tr><th>HNO</th><td>{data._id}</td></tr>
-                <tr><th>Photo</th><td><img src={`https://result-portal-api.vercel.app/pic/${data.photo}`}/></td></tr>
+                <tr><th>Photo</th><td><img src={`https://result-portal-4nfo.onrender.com/pic/${data.photo}`}/></td></tr>
                 <tr><th>Name</th><td>{data.name}</td></tr>
                 <tr><th>DOB</th><td>{data.dob.slice(0,10)}</td></tr>
                 <tr><th>Phno</th><td>{data.phno}</td></tr>
