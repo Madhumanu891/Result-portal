@@ -15,7 +15,7 @@ const Disp = () => {
 
   },[])
   useEffect(()=>{
-axios.get("https://result-portal-api.vercel.app/getstd",{"headers":{"Authorization":obj.store.token}}).then((res)=>{
+axios.get("https://result-portal-4nfo.onrender.com/getstd",{"headers":{"Authorization":obj.store.token}}).then((res)=>{
   setData(res.data)
 })
   },[f])
@@ -25,7 +25,7 @@ axios.get("https://result-portal-api.vercel.app/getstd",{"headers":{"Authorizati
 
   }
   let del=(hno)=>{
-    axios.delete(`https://result-portal-api.vercel.app/del/${hno}`,{"headers":{"Authorization":obj.store.token}}).then((res)=>{
+    axios.delete(`https://result-portal-4nfo.onrender.com/del/${hno}`,{"headers":{"Authorization":obj.store.token}}).then((res)=>{
       setF(!f)
 
     })
