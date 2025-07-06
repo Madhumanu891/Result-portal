@@ -8,7 +8,7 @@ const Hal = () => {
     let fun=(e)=>setopt(e.target.value)
     let fun1=(e)=>setVal(e.target.value)
     let gethal=()=>{
-        axios.get(`https://result-portal-api.vercel.app/hal/${opt}/${val}`).then((res)=>{
+        axios.get(`https://result-portal-4nfo.onrender.com/hal/${opt}/${val}`).then((res)=>{
             setData(res.data)
          
         })
@@ -33,7 +33,7 @@ const Hal = () => {
         {data!==""&&data.length==0&&<div>Check details</div>}
        {data!=""&&data.length>0&& <div className='hcard'>
 
-            <img src={`https://result-portal-api.vercel.app/pic/${data[0].photo}`}/>
+            <img src={`https://result-portal-4nfo.onrender.com/pic/${data[0].photo}`}/>
             <p>HALLNO:{data[0]._id}</p>
             <p>Name:{data[0].name}</p>
         </div>}
