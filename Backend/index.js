@@ -3,6 +3,7 @@ let mongoose=require("mongoose")
 let cors=require("cors")
 let bodyParser=require("body-parser")
 const rt = require("./routes/rt")
+require("dotenv").config()
 mongoose.connect(process.env.MONGO_URI).then(()=>{
     console.log("ok")
 })
