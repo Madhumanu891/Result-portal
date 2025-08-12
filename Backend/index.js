@@ -3,9 +3,7 @@ let mongoose=require("mongoose")
 let cors=require("cors")
 let bodyParser=require("body-parser")
 const rt = require("./routes/rt")
-
-
-mongoose.connect(process.env.MONGO_URL).then(()=>{
+mongoose.connect("mongodb://127.0.0.1:27017/s34resportal").then(()=>{
     console.log("ok")
 })
 let app=express()
@@ -14,4 +12,4 @@ app.use(bodyParser.urlencoded({"extended":true}))
 app.use(cors())
 app.use("/pic",express.static("./phots"))
 app.use("/",rt)
-app.listen(process.env.PORT || 5000)
+app.listen(5000)

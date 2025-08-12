@@ -10,11 +10,13 @@ import './App.css'
 import Hal from './comp/Hal'
 import Ct from './comp/Ct'
 import { useState } from 'react'
+import axios from "axios"
 const App = () => {
   let [store,setStore]=useState({"token":"","name":""})
   let updstore=(obj)=>{
     setStore({...store,...obj})
   }
+  axios.defaults.withCredentials=true
   let obj={"store":store,"updstore":updstore}
   return (
     <div className="app-container">
