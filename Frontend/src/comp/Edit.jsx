@@ -20,7 +20,7 @@ const Edit = () => {
 
   }
   let upd=()=>{
-    axios.put("https://result-portal-api.vercel.app/upd",data,{"headers":{"Authorization":obj.store.token}}).then((res)=>{
+    axios.put("https://result-portal-4nfo.onrender.com/upd",data,{"headers":{"Authorization":obj.store.token}}).then((res)=>{
       navigate("/disp")
     })
 
